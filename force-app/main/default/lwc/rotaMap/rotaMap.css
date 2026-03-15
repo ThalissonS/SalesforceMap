@@ -1,0 +1,22 @@
+.map-container {
+    background-color: #f3f2f2;
+    border-radius: 4px;
+    overflow: hidden; 
+}
+
+.map-root {
+    height: 500px;
+    width: 100%;
+    z-index: 0; /* Garante que o spinner fique acima */
+}
+
+/* Garante que o CSS global do Salesforce não distorça os tiles do mapa */
+.map-root img {
+    max-width: none !important;
+    box-shadow: none !important; 
+}
+
+/* Define a cor de fundo igual ao oceano do mapa para evitar flashes brancos */
+.leaflet-container {
+    background-color: #aad3df !important;
+}
